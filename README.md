@@ -24,3 +24,8 @@ You're given a workout in the 12 Days of Christmas style:
 - Box height: 24"/20"
 
 Calculate the number of repetitions for each movement. The workout is completed 1x day 1, 2x day 2 + 1x day 1, etc. Day 12 counts as 12 repetitions.
+
+## Changelog
+---
+
+- Added a simple fibonacci sequence generator. This doesn't match workout reps however, because `f(0)` returns `1`, but is `0` repetitions in the workout.

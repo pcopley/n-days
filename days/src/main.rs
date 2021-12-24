@@ -2,12 +2,11 @@ use std::io;
 
 fn main() {
     println!("Simple fibonacci");
-    // println!("{}", fib(2));
 
     loop {
       let mut input = String::new();
 
-      println!("Enter a number ('[q]uit' to quit): ");
+      println!("Enter a number or [q]uit: ");
 
       io::stdin().read_line(&mut input).expect("Failed to read line");
 
@@ -15,12 +14,12 @@ fn main() {
         break;
       }
 
-      let input: u32 = match input.trim().parse() {
+      let n: u32 = match input.trim().parse() {
         Ok(num) => num,
         Err(_) => continue,
       };
       
-      println!("{}", fib(input));
+      println!("{}", fib(n));
     }
 }
 
