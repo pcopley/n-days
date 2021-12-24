@@ -29,3 +29,4 @@ Calculate the number of repetitions for each movement. The workout is completed 
 ---
 
 - Added a simple fibonacci sequence generator. This doesn't match workout reps however, because `f(0)` returns `1`, but is `0` repetitions in the workout.
+- Update fibonacci to make it not quite fibonacci anymore, but now it accurately counts workout repetitions, which is what we actually want.
